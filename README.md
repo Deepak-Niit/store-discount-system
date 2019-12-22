@@ -22,9 +22,9 @@ AffiliateTest , CustomerTest , EmployeeTest and DiscountCalculatorServiceImplTes
 
 # Design Pattern
 
-1. Singelton Design pattern to read the properties file only one PropertyReader.java
+1. Singelton Design pattern to read the properties file only once PropertyReader.java
 2. Factory Design Pattern to create the user based on input
-
+3. Users are Employee,  Affiliate and Customer 
 # Code Coverage
 
 Install eclema to your IDE.
