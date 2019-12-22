@@ -41,3 +41,5 @@ check code quality on http://localhost:9000 (url mention in pom.xml as below)
 	</properties>
 
 
+# Attached uml diagram.
+uml-diagram.pdf
