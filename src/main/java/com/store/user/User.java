@@ -6,14 +6,14 @@ import com.store.model.Product;
 
 public abstract class User {
 
-	protected LocalDate registeredDate;
-	protected int discountRate;
+    protected LocalDate registeredDate;
+    protected int discountRate;
 
-	public User(int discountRate, LocalDate registeredDate) {
-		this.discountRate = discountRate;
-		this.registeredDate = registeredDate;
-	}
+    public User(int discountRate, LocalDate registeredDate) {
+	this.discountRate = discountRate;
+	this.registeredDate = registeredDate;
+    }
 
-	public abstract double calculateDiscountPrice(Product product);
+    public abstract double calculateDiscountPrice(Product product);
 
 }

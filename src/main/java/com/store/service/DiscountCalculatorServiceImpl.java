@@ -7,12 +7,12 @@ import com.store.user.User;
 
 public class DiscountCalculatorServiceImpl implements CalculateDiscountService {
 
-	private DiscountDao discountDao;
+    private DiscountDao discountDao;
 
-	public double calculate(User user, Product product) {
-		discountDao = new DiscountDaoImpl();
-		return discountDao.calculateDiscountForGroceries(user, product);
+    public double calculate(User user, Product product) {
+	discountDao = new DiscountDaoImpl();
+	return discountDao.calculateDiscountForGroceries(user, product);
 
-	}
+    }
 
 }

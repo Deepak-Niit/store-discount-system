@@ -3,6 +3,9 @@ package com.store.util;
 import com.store.exception.PriceException;
 import com.store.model.Product;
 
+/*
+ * Utility class for calculate Discount
+ */
 public class DiscountCalculator {
 
     private static final int _100 = 100;
@@ -10,6 +13,9 @@ public class DiscountCalculator {
     private DiscountCalculator() {
     }
 
+    /*
+     * Calucate Discout price
+     */
     public static double calculateDiscount(Product product, int discountRate) {
 
 	double discountedPrice = 0.0;

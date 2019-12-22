@@ -39,7 +39,7 @@ public class Customer extends User {
      */
     private double calculateOffAmount(Product product) {
 	int discountEveryPrice = parseInt(
-		PropertyReader.getProperty().getProperty(Constants.DISCOUNT_ON_EVERY_HUNDRED));
+	        PropertyReader.getProperty().getProperty(Constants.DISCOUNT_ON_EVERY_HUNDRED));
 	double price = product.getPrice();
 	int hundredMultiple = (int) (price / HUNDRED);
 	return price - (hundredMultiple * discountEveryPrice);
