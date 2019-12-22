@@ -3,6 +3,7 @@ package com.store.user;
 import java.time.LocalDate;
 
 import com.store.model.Product;
+import com.store.util.DiscountCalculator;
 
 public class Employee extends User {
 
@@ -13,18 +14,16 @@ public class Employee extends User {
 		this.discountRate = discountRate;
 	}
 
-	public int getDiscountRate() {
-		return discountRate;
-	}
-
 	@Override
 	public double calculateDiscountPrice(Product product) {
-		double discountedPrice = 0;
-		
+
+		double discountPrice = product.getPrice();
 		if (!product.isGrocery()) {
-			discountedPrice = product.getPrice() - (product.getPrice() * discountRate / 100);
+			discountPrice = DiscountCalculator.calculateDiscount(product, discountRate);
 		}
-		return discountedPrice;
+
+		return discountPrice;
+
 	}
 
 }

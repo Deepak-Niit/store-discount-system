@@ -12,22 +12,27 @@ import com.store.util.PropertyReader;
 
 public class UserFactory {
 
-	public User getUSer(USER_TYPE user_Type, LocalDate registeredDate) {
+	private UserFactory() {
+	}
+
+	public static User getUSer(USER_TYPE userType, LocalDate registerDate) {
 		int discountRate = 0;
 		Properties prop = PropertyReader.getProperty();
-		switch (user_Type) {
+		switch (userType) {
 		case EMPLOYEE:
 			discountRate = Integer.parseInt(prop.getProperty(Constants.EMPLOYEE_DISCOUNT_RATE));
-			return new Employee(discountRate , registeredDate);
+			return new Employee(discountRate, registerDate);
 		case AFFILIATE:
 			discountRate = Integer.parseInt(prop.getProperty(Constants.AFFILIATE_DISCOUNT_RATE));
-			return new Affiliate(discountRate , registeredDate);
+			return new Affiliate(discountRate, registerDate);
 		case CUSTOMER:
 			discountRate = Integer.parseInt(prop.getProperty(Constants.NORMAL_USER_DISCOUNT_RATE));
-			return new Customer(discountRate ,  registeredDate);
+			return new Customer(discountRate, registerDate);
+
+		default:
+			return null;
 		}
 
-		return null;
 	}
 
 }

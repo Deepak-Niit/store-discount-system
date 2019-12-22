@@ -5,6 +5,10 @@ import java.time.Period;
 
 public class YearsCalculator {
 
+	private YearsCalculator() {
+
+	}
+
 	public static int getYears(LocalDate registeredDate) {
 
 		LocalDate today = LocalDate.now();

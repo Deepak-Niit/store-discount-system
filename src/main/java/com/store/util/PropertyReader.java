@@ -6,21 +6,25 @@ import java.util.Properties;
 
 public class PropertyReader {
 
+	private static final String APPLICATION_PROPERTIES = "application.properties";
 	static Properties prop = new Properties();
+
+	private PropertyReader() {
+	}
 
 	public static Properties getProperty() {
 		return prop;
 	}
 
 	static {
-		String resourceName = "application.properties"; // could also be a constant
+		String resourceName = APPLICATION_PROPERTIES;
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
 
 		try {
 			InputStream resourceStream = loader.getResourceAsStream(resourceName);
 			prop.load(resourceStream);
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (IOException ex) {
+			System.err.println(ex);
 		}
 	}
 

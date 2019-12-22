@@ -12,6 +12,7 @@ public class DiscountCalculatorServiceImpl implements CalculateDiscountService {
 	public double calculate(User user, Product product) {
 		discountDao = new DiscountDaoImpl();
 		return discountDao.calculateDiscountForGroceries(user, product);
+
 	}
 
 }

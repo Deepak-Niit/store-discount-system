@@ -1,0 +1,17 @@
+com\store\dao\DiscountDao.class
+com\store\model\Product.class
+com\store\fatory\USER_TYPE.class
+com\store\fatory\UserFactory.class
+com\store\user\Affiliate.class
+com\store\util\YearsCalculator.class
+com\store\fatory\UserFactory$1.class
+com\store\util\DiscountCalculator.class
+com\store\service\CalculateDiscountService.class
+com\store\user\Employee.class
+com\store\constant\Constants.class
+com\store\service\DiscountCalculatorServiceImpl.class
+com\store\user\Customer.class
+com\store\user\User.class
+com\store\util\PropertyReader.class
+com\store\dao\DiscountDaoImpl.class
+com\store\exception\PriceException.class

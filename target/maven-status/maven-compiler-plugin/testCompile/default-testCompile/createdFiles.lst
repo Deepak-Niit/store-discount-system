@@ -1,0 +1,5 @@
+com\store\user\EmployeeTest.class
+com\store\service\DiscountCalculatorServiceImplTest.class
+com\store\user\AffiliateTest.class
+com\store\dao\DiscountDaoImplTest.class
+com\store\user\CustomerTest.class
