@@ -16,18 +16,22 @@ as a discount).
 2. Go the project location
 3. mvn clean install
 
-#Test
+# Test
+
 AffiliateTest , CustomerTest , EmployeeTest and DiscountCalculatorServiceImplTest cover all the scenario
 
-#Design Pattern
+# Design Pattern
+
 1. Singelton Design pattern to read the properties file only one PropertyReader.java
 2. Factory Design Pattern to create the user based on input
 
-#Code Coverage
+# Code Coverage
+
 Install eclema to your IDE.
 Right clic k and choose coverage as JUnit to see the code coverage.
 
-#Sonar Report
+# Sonar Report
+
 Install SonarQube locally
 run command mvn clean install
 run command mvn sonar:sonar
