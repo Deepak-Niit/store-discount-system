@@ -9,8 +9,31 @@ as a discount).
 5. The percentage based discounts do not apply on groceries.
 6. A user can get only one of the percentage based discounts on a bill.
 
-# Step for test the code
-1. Download project
+
+
+# Step for build the code
+1. Get the clone of the code from the url ="https://github.com/Deepak-Niit/store-discount-system"
 2. Go the project location
 3. mvn clean install
-4. Run the all junit test cases
+
+#Test
+AffiliateTest , CustomerTest , EmployeeTest and DiscountCalculatorServiceImplTest cover all the scenario
+
+#Design Pattern
+1. Singelton Design pattern to read the properties file only one PropertyReader.java
+2. Factory Design Pattern to create the user based on input
+
+#Code Coverage
+Install eclema to your IDE.
+Right clic k and choose coverage as JUnit to see the code coverage.
+
+#Sonar Report
+Install SonarQube locally
+run command mvn clean install
+run command mvn sonar:sonar
+check code quality on http://localhost:9000 (url mention in pom.xml as below)
+<properties>
+	<sonar.host.url>http://localhost:9000</sonar.host.url>
+	</properties>
+
+
