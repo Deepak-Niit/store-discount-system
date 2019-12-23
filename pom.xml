@@ -5,6 +5,9 @@
 	<groupId>com.store.system</groupId>
 	<artifactId>store-discount-system</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+	<sonar.host.url>http://localhost:9000</sonar.host.url>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
